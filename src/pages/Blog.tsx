@@ -8,10 +8,10 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 const Blog = () => {
   const blogPosts = [
     {
-      title: "Building Scalable React Applications",
+      title: "React Applications",
       excerpt: "Learn best practices for structuring React applications that can grow with your team and requirements. Explore component architecture, state management, and performance optimization techniques.",
       date: "2024-01-15",
-      readTime: "8 min read",
+      readTime: "1000 min read",
       category: "React",
       tags: ["React", "Architecture", "Performance"],
       featured: true,
