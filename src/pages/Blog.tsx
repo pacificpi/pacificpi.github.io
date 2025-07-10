@@ -11,7 +11,7 @@ const Blog = () => {
       title: "React Applications",
       excerpt: "Learn best practices for structuring React applications that can grow with your team and requirements. Explore component architecture, state management, and performance optimization techniques.",
       date: "2024-01-15",
-      readTime: "1000 min read",
+      readTime: "10 min read",
       category: "React",
       tags: ["React", "Architecture", "Performance"],
       featured: true,
