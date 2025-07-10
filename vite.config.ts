@@ -1,34 +1,9 @@
-
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-import { componentTagger } from "lovable-tagger";
+import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  // For user/organization GitHub Pages (username.github.io), use root path
-  base: '/',
-  server: {
-    host: "::",
-    port: 8080,
-  },
-  plugins: [
-    react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
+export default defineConfig({
+  base: '/', // You might set this to '/<repo-name>/' if not at root.
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
-    },
+    outDir: 'dist', // This is the default, but ensure it's set.
   },
-}));
+});
